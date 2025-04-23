@@ -3,8 +3,7 @@ const router = express.Router();
 const instaUser = require("../models/instaUser");
 
 
-
-router.post("/", async(req,res)=>{
+router.post("/signup", async(req,res)=>{
     try {
         const data = req.body;
         let newInstaUser = new instaUser(data);

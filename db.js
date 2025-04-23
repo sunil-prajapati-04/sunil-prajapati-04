@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');//Requiring Mongoose library to connect node.js and mongodb server
 require('dotenv').config();
 
-// const mongoUrl = process.env.mongodb_url_local;//This is the url of MongoDB server >> this you can get from cmd my giving command mongosh 
-const mongoUrl = process.env.mongodb_url_online; //ye humne env file se url liya hain ...ye mongodb server jo online hain (mongodb atlas) yahan se iss database ko koi bhi access kar sakta hain...locolhost server se sirf hum he access kar sakte the
+//const mongoUrl = process.env.mongodb_url_local;//This is the url of MongoDB server >> this you can get from cmd my giving command mongosh 
+ const mongoUrl = process.env.mongodb_url_online; //ye humne env file se url liya hain ...ye mongodb server jo online hain (mongodb atlas) yahan se iss database ko koi bhi access kar sakta hain...locolhost server se sirf hum he access kar sakte the
 
 mongoose.connect(mongoUrl);
 

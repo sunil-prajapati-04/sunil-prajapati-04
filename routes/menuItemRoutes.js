@@ -33,7 +33,7 @@ router.get("/:dishType", async(req,res)=>{
     try {
         let dishType = req.params.dishType;
         if(dishType ==="starter" || dishType=="main course"||dishType=="dessert"){
-        let data = await MenuItem.find();
+        let data = await MenuItem.find({category:dishType});
         console.log("menu data fetched",data);
         res.status(200).json(data);
         }else{
